@@ -1,2 +1,5 @@
 @import url("common.css");
 @import url("side_menu.css");
+ul {
+    list-style-position: inside;
+}
