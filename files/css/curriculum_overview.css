@@ -24,3 +24,8 @@ main li {
 .classroom p {
     font-size: 1.15em;
 }
+
+#small-image-collection {
+    overflow: auto;
+    clear: both;
+}
