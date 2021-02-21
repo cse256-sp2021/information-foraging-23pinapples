@@ -3,14 +3,16 @@
     background-image: url("https://nurseryschool.wustl.edu/files/2015/03/group-holi.jpg");
 }
 
-main ol{
+ol{
     list-style-position: inside;
     /* display: list-item; */
     margin-left: 1.5em;
     padding: -10px;
 }
 
-main li{
+li{
     display: block;
     position: relative;
+    font-size: 20px;
+    border: 5px;
 }

@@ -17,11 +17,14 @@ ul {
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+.panel p{
+  font-size: 15px;
+}
+.active, .accordion:hover {
     background-color: #ccc;
   }
   
-  .accordion:after {
+.accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
@@ -29,14 +32,21 @@ ul {
     margin-left: 5px;
   }
   
-  .active:after {
+.active:after {
     content: "\2212";
   }
   
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+
+li{
+  font-size: 15px;
+}
+ul{
+  list-style-position: inside;
+}
