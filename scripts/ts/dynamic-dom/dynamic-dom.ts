@@ -25,7 +25,32 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     });
     }
     
+    function openTab(evt, cityName) {
 
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        console.log("stuff ", cityName);
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += "active";
+    }
+
+    var domElements = document.getElementsByClassName("tablinks");
+    console.log(domElements);
+    for (i=0; i<domElements.length; i++){
+        // var that = domElements[i].innerHTML;
+        var elem = domElements[i];
+        elem.onclick = function(event) {
+            // console.log(that)
+            openTab(event, event.currentTarget.target);
+        };
+    }
 }
 
 export async function setupAll() {
