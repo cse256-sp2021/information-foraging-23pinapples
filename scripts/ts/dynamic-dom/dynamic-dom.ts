@@ -41,16 +41,20 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
         evt.currentTarget.className += "active";
     }
 
-    var domElements = document.getElementsByClassName("tablinks");
-    console.log(domElements);
-    for (i=0; i<domElements.length; i++){
-        // var that = domElements[i].innerHTML;
-        var elem = domElements[i];
-        elem.onclick = function(event) {
-            // console.log(that)
-            openTab(event, event.currentTarget.target);
-        };
-    }
+    // var domElements = document.getElementsByClassName("tablinks");
+    // console.log(domElements);
+    // for (i=0; i<domElements.length; i++){
+    //     var that = domElements[i].innerHTML;
+    //     var elem = domElements[i];
+    //     elem.onclick = function(event) {
+    //         openTab(event, that);
+    //     };
+    // }
+    document.getElementById("social_tab").onclick = function(event) { openTab(event, "Social"); }
+    document.getElementById("Social").style.display = "block";
+    document.getElementById("intellect_tab").onclick = function(event) { openTab(event, "Intellect"); }
+    document.getElementById("physical_tab").onclick = function(event) { openTab(event, "Physical"); }
+    document.getElementById("visual_tab").onclick = function(event) { openTab(event, "Visual"); }
 }
 
 export async function setupAll() {

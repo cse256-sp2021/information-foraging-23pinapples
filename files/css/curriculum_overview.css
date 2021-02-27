@@ -2,6 +2,7 @@
 @import url("side_menu.css");
 main ul {
     margin-top: 1em;
+    list-style-position: inside;
 }
 
 main li {
