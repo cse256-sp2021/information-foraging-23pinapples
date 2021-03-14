@@ -116,3 +116,12 @@ main hr {
     background-color: #eee;
     height: 1px;
 }
+
+.hours_operate{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    left: 10%;
+}
+
