@@ -50,9 +50,14 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     //         openTab(event, that);
     //     };
     // }
-    document.getElementById("social_tab").onclick = function(event) { openTab(event, "Social"); }
-    document.getElementById("Social").style.display = "block";
+    // document.getElementById("social_tab").onclick = function(event) { openTab(event, "Social"); }
+    // document.getElementById("Social").style.display = "block";
+    // document.getElementById("intellect_tab").onclick = function(event) { openTab(event, "Intellect"); }
+
     document.getElementById("intellect_tab").onclick = function(event) { openTab(event, "Intellect"); }
+    document.getElementById("Intellect").style.display = "block";
+    document.getElementById("social_tab").onclick = function(event) { openTab(event, "social"); }
+
     document.getElementById("physical_tab").onclick = function(event) { openTab(event, "Physical"); }
     document.getElementById("visual_tab").onclick = function(event) { openTab(event, "Visual"); }
 }
